@@ -3,6 +3,7 @@ function obtain_git_branch {
   br=`git branch | grep "*"`
   echo ${br/* /}
 }
+
 result=`obtain_git_branch`
 
 #curpath=$(cd `dirname $0`; pwd)
